@@ -1,0 +1,63 @@
+#startingheader {
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgb(255, 255, 255,0.7)) ,url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar {
+    transition: 0.5s;
+}
+
+a.navbar-brand {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+a.nav-link:hover {
+    border-bottom: 2px solid #f4e000;
+    padding-bottom: 2px;
+}
+
+.navbar .fa-facebook-f,.fa-instagram {
+    font-size: 1.5rem;
+}
+
+.btn-mehr {
+    font-size: 3vh;
+    border: 2px solid #000;
+    color: #fff;
+    background-color: rgb(0,0,0,0.4);
+    text-transform: uppercase;
+}
+
+.btn-mehr:hover {
+    color: #fff;
+    background-color: rgb(244, 224, 0, 0.8);
+    border: 2px solid #fff;
+}
+
+section#startingheader h4 {
+    font-weight: 600;
+    text-shadow: 1px 1px 6px #fff;
+}
+
+#startingheader h4 b {
+    color: #f4e000;
+    text-shadow: 1px 1px 6px #000;
+}
+
+.divider.flip-x {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* .bg-headerbox {
+    background-color: rgb(0,0,0,0.5);
+    color: #fff;
+    padding: 1rem;
+} */
