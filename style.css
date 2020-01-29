@@ -1,12 +1,12 @@
 #startingheader {
-    background-image: linear-gradient(to top, rgba(0,0,0,0), rgb(255, 255, 255,0.7)) ,url(header.jpg);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgb(255, 255, 255,0.7)) ,url(header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-.navbar {
+.navbar, .navbar-brand img {
     transition: 0.5s;
 }
 
@@ -38,6 +38,7 @@ a.nav-link:hover {
     color: #fff;
     background-color: rgb(244, 224, 0, 0.8);
     border: 2px solid #fff;
+    text-decoration: none;
 }
 
 section#startingheader h4 {
@@ -55,6 +56,36 @@ section#startingheader h4 {
     bottom: 0;
     width: 100%;
 }
+
+#semicirclebar {
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+  }
+
+  .g-scrolling-carousel .items i {
+    background-color: #ffe800;
+    padding: 30px;
+    text-align: center;
+    font-size: 8vh;
+    margin-right: 20px;
+}
+
+section#UnserAngebot .card-deck {
+    text-align: center;
+}
+
+section#UnserAngebot .card-deck .card {
+    color: #fff;
+    border: none;
+}
+
+section#UnserAngebot .card-header {
+    color: #fff;
+    background-color: #303030;
+}
+
+
 
 /* .bg-headerbox {
     background-color: rgb(0,0,0,0.5);
