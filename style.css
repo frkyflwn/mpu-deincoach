@@ -1,13 +1,35 @@
-#startingheader {
+header {
+
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.imageheader {
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgb(255, 255, 255,0.7)) ,url(header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 5s ease-in;
+    transition: 50s;
+
 }
 
+.imageheader:hover {
+
+    transform: scale(1.5);
+}
+
+
+
 .navbar, .navbar-brand img {
+
     transition: 0.5s;
+
 }
 
 a.navbar-brand {
@@ -41,12 +63,12 @@ a.nav-link:hover {
     text-decoration: none;
 }
 
-section#startingheader h4 {
+header h4 {
     font-weight: 600;
     text-shadow: 1px 1px 6px #fff;
 }
 
-#startingheader h4 b {
+header h4 b {
     color: #f4e000;
     text-shadow: 1px 1px 6px #000;
 }
@@ -57,33 +79,60 @@ section#startingheader h4 {
     width: 100%;
 }
 
+section#Info {
+    font-size: 1.5rem;
+}
+
 #semicirclebar {
-    margin: 20px;
-    width: 200px;
-    height: 100px;
+    padding: 20px;
+    height: 150px;
   }
 
-  .g-scrolling-carousel .items i {
+  section#Info .mpuitem {
+      padding: 10px 0;
+  }
+
+  section#Info .mpuitems i:not(.downarrow) {
     background-color: #ffe800;
+    width: 110px;
     padding: 30px;
     text-align: center;
-    font-size: 8vh;
+    font-size: 5vh;
     margin-right: 20px;
+}
+
+.erstgespraechinfo i:not(.fa-chevron-right) {
+    font-size: 3.5rem;
+    padding: 20px;
+}
+
+.erstgespraechinfo {
+    font-size: 2rem;
 }
 
 section#UnserAngebot .card-deck {
     text-align: center;
 }
 
-section#UnserAngebot .card-deck .card {
+section#UnserAngebot .card-header {
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     color: #fff;
-    border: none;
 }
 
-section#UnserAngebot .card-header {
+section#UnserAngebot .card-deck .card {
+    border: none; 
+}
+
+
+
+
+/* section#UnserAngebot .card-header {
     color: #fff;
     background-color: #303030;
-}
+} */
 
 
 

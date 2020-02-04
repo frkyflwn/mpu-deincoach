@@ -53,12 +53,14 @@
 			easing: 'easeInOut',
 			duration: 1400,
 			svgStyle: null,
+
 			text: {
 			  value: '',
-			  alignToBottom: false
+			  alignToBottom: false,
+
 			},
 			from: {color: '#FFEA82'},
-			to: {color: '#ED6A5A'},
+			to: {color: '#28a745'},
 			// Set default step function for all animate calls
 			step: (state, bar) => {
 			  bar.path.setAttribute('stroke', state.color);
@@ -73,7 +75,7 @@
 			}
 		  });
 		  bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-		  bar.text.style.fontSize = '2rem';
+		  bar.text.style.fontSize = '4rem';
 		  
 		  bar.animate(0.96);  // Number from 0.0 to 1.0
 	
