@@ -2,6 +2,64 @@
 	  $(document).ready(function(){
 
 
+		$('.fa-comments').click(function() {
+
+			$('.fa-phone').toggleClass('active');
+			$('.fa-times').toggleClass('active');
+			$('.fa-whatsapp').toggleClass('active');
+			$('.fa-envelope').toggleClass('active');
+			$('.fa-calendar-check').toggleClass('active');
+			$('.fa-comments').hide();
+
+		});
+
+		$('.fa-times').click(function() {
+
+			$('.fa-phone').toggleClass('active');
+			$('.fa-times').toggleClass('active');
+			$('.fa-whatsapp').toggleClass('active');
+			$('.fa-envelope').toggleClass('active');
+			$('.fa-calendar-check').toggleClass('active');
+			$('.fa-comments').show();
+
+		});
+
+			
+/* 
+			$('.stickycontact .fa-phone').css({"background-color": "#fd7e14", 
+			"transform": "translateX(-90px)",  
+				
+			
+
+/* 			$('.fa-envelope').css({
+	
+				"transform": "translateX(-360px)",
+				"visibility": "visible",
+			})
+
+			$('.fa-whatsapp').css({
+				"transform": "translateX(-180px)",
+				"visibility": "visible",
+			})
+
+			$('.stickycontact .fa-calendar-check').css({
+				"transform": "translateX(-270px)",
+				"visibility": "visible",
+			})
+
+			$('.fa-times').css({
+	
+				"visibility": "visible",
+			}) */
+
+
+
+
+		
+	
+	
+
+
 		
 		// hide .navbar first
 		//$("#navbar").hide();
@@ -13,6 +71,7 @@
 				if ($(this).scrollTop() > 50 ) {
 
 					$('.navbar-brand img').css('height', '35px');
+					$('.navbar-brand img:last-of-type').hide();
 					$('#navbar').addClass('bg-light');
 					
                 //     $('#navbar').fadeIn();
@@ -22,9 +81,18 @@
                 //    })
                      
 				
+				} else if ($(window).width() < 700) {
+
+					$('.navbar-brand img:first-of-type').css('height', '60px');
+					$('.navbar-brand img:last-of-type').show();
+					$('.navbar-brand img:last-of-type').css('height', '35px');
+					$('#navbar').removeClass('bg-light');
+
+
 				} else {
 					//$('#navbar').fadeOut();
 					$('.navbar-brand img:first-of-type').css('height', '100px');
+					$('.navbar-brand img:last-of-type').show();
 					$('.navbar-brand img:last-of-type').css('height', '50px');
                     $('#navbar').removeClass('bg-light');
 				}
@@ -80,7 +148,8 @@
 		  bar.animate(0.96);  // Number from 0.0 to 1.0
 	
 	});
-	  }(jQuery));
+		}(jQuery));
+
 	  
 
 // progressbar.js@1.0.0 version is used
