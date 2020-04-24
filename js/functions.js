@@ -1,6 +1,8 @@
 		(function ($) {
 	  $(document).ready(function(){
 
+		AOS.init();
+
 
 		$('.fa-comments').click(function() {
 

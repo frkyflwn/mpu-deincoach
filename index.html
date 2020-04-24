@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
 	<link href="jquery.gScrollingCarousel.css" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>MPU - dein Coach</title>
 	
@@ -93,18 +94,9 @@
 										zu Ihrem Führerschein zurück</h1>
 									<h4 class="mt-4 mb-3">Jetzt <b>kostenloses</b> Erstgespräch vereinbaren und beraten lassen</h4>
 									
-									<div
-	class="timify-button"
-	data-account-id="5e9cbb710c5bb049827014a7"
-><a class="px-3"><button class="btn-primary rounded-pill btn-lg px-5 py-2 border-0 text-uppercase" ><i class="far fa-calendar-check pr-2"></i>Online Termin reservieren</button></a></div>
+									<a class="px-3"><button class="btn-primary rounded-pill btn-lg px-5 py-2 border-0 text-uppercase" data-toggle="modal" data-target="#exampleModal" ><i class="far fa-calendar-check pr-2"></i>Online Termin reservieren</button></a>
 
-<div
-	class="timify-button"
-	data-account-id="5e9cbb710c5bb049827014a7"
-	data-overlay-color="#000000"
-	data-overlay-opacity="0.8"
-	data-show-guest-booking-form="true"
->Termin online buchen</div>
+
 									<!-- <a class="btn-mehr btns rounded-0 px-5 py-3 mt-auto mb-3" href="#Info" role="button"><i class="fas fa-chevron-down pr-2"></i>Mehr erfahren</a> -->
 							</div>
 				
@@ -214,6 +206,31 @@
 
 			</section> -->
 
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+						<iframe id="etifr" src="https://www.eTermin.net/FlorianWirt" height="1600px" width="100%" scrolling="no" frameborder="0">
+							<a href="https://www.eTermin.net/FlorianWirt">eTermin Buchungssystem - der Online Terminkalender zur einfachen Terminbuchung!</a>
+						</iframe>
+						<script src='https://www.eTermin.net/js/resizecustomersitescroll.min.js' type='text/javascript'></script>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			
+
 			<section id="Info" class="jumbotron-fluid py-5" >
 
 				<!-- <div style="background-color: #212529" class="headlinerow my-5 d-flex justify-content-end w-75">
@@ -227,7 +244,7 @@
 				</div> -->
 
 				
-				<div class="headlinerowdark mb-5 d-flex justify-content-end">
+				<div data-aos="fade-right" class="headlinerowdark mb-5 d-flex justify-content-end">
 					<h1 class="fullheadline display-4 pr-5 text-white text-right">In nur 3 Schritten Deine MPU bestehen</h1>
 
 				</div>
@@ -235,7 +252,7 @@
 				
 					<div style="padding: 0 20px;" class="row text-center">
 						
-						<div class="col-md-4 pb-5">
+						<div data-aos="zoom-in" class="tt1 col-md-4 pb-5">
 							
 							<h2 class="pt-3 pb-2">1.<br>Kostenloses Erstgespräch vereinbaren</h2>	
 							<i class="fas fa-handshake"></i>
@@ -245,7 +262,7 @@
 							<button class="btn-termin btn-primary rounded-pill"><span class="align-middle">Termin buchen</span></button>
 						</div>
 
-						<div class="col-md-4 pb-5">
+						<div data-aos="zoom-in" class="tt2 col-md-4 pb-5">
 							
 							<h2 class="pt-3 pb-3">2.<br>Gewünschtes Angebot auswählen</h2>	
 							<i class="fas fa-boxes pb-3"></i>
@@ -255,7 +272,7 @@
 							<a href="#UnserAngebot"><button class="btn-termin btn-primary bg-danger rounded-pill"><span class="align-middle">Zu den Angeboten</span></button></a>					
 						</div>
 
-						<div class="col-md-4 pb-5">
+						<div data-aos="zoom-in" class="tt3 col-md-4 pb-5">
 							
 							<h2 class="pt-3 pb-3">3.<br>MPU bestehen und Führerschein erhalten</h2>
 							<i class="fas fa-thumbs-up pb-3"></i>	
@@ -277,7 +294,7 @@
 
 			<section id="Info2" class="jumbotron-fluid bg-white py-5">
 
-					<div class="headlinerow mb-2 d-flex justify-content-end">
+					<div data-aos-anchor-placement="bottom-bottom" data-aos="fade-right" class="headlinerow mb-2 d-flex justify-content-end">
 						<h1 class="fullheadline display-4 pr-5">Egal welches Anliegen</h1>
 
 						<!-- <div class="headeredge ">
@@ -287,7 +304,7 @@
 						</div> -->
 					</div>
 					
-					<div class="headlinerowright mb-5 ml-auto d-flex justify-content-start">
+					<div data-aos-anchor-placement="bottom-bottom" data-aos="fade-left" class="headlinerowright mb-5 ml-auto d-flex justify-content-start">
 						<div class="headeredge ">
 						</div>
 						<h1 class="fullheadline display-4 pl-5">wir haben die Antworten auf Deine Fragen</h1>
@@ -296,7 +313,7 @@
 					<div class="container">
 
 					<div class="row justify-content-between">
-						<div class="mpuitems col-lg-6 d-flex flex-column mb-5">
+						<div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" class="mpuitems col-lg-6 d-flex flex-column mb-5">
 							<div class="mpuitem row align-items-center" data-toggle="collapse" href="#collapseExample">
 								<i class="fas fa-wine-bottle rounded-circle"></i> 
 								<h3>Alkohol MPU</h3>
@@ -358,8 +375,8 @@
 							</div>
 
 					</div>
-
-					<div class="col-lg-5 text-center mb-5">
+					
+					<div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" class="col-lg-5 text-center mb-5">
 						<img src="imgs/meeting.jpg" class="rounded-circle w-75 ">
 						<p style="margin-bottom: 0;">Die Anordnung zur MPU ist für jeden erstmal ein Schock.
 							So viele <b>offene Fragen</b> und das Internet bietet eine Million ungeordnete Antworten.<br><br>
@@ -729,11 +746,7 @@
 	<script src="https://kit.fontawesome.com/add79fef1b.js" crossorigin="anonymous"></script>
 	<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
 	<script src="js/jquery.gScrollingCarousel.js"></script>
-	<script async
-	src="//book.timify.com/widget/widget.min.js"
-	id="timify-widget"
-	data-position="flexible"
-></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
