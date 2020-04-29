@@ -4,27 +4,18 @@
 		AOS.init();
 
 
-		$('.fa-comments').click(function() {
+		$('.fa-plus').click(function() {
 
 			$('.fa-phone').toggleClass('active');
-			$('.fa-times').toggleClass('active');
+			$('.fa-plus').toggleClass('active');
 			$('.fa-whatsapp').toggleClass('active');
 			$('.fa-envelope').toggleClass('active');
 			$('.fa-calendar-check').toggleClass('active');
-			$('.fa-comments').hide();
+			
 
 		});
 
-		$('.fa-times').click(function() {
-
-			$('.fa-phone').toggleClass('active');
-			$('.fa-times').toggleClass('active');
-			$('.fa-whatsapp').toggleClass('active');
-			$('.fa-envelope').toggleClass('active');
-			$('.fa-calendar-check').toggleClass('active');
-			$('.fa-comments').show();
-
-		});
+		
 
 			
 /* 
@@ -68,6 +59,10 @@
 		
 		// fade in .navbar
 		$(function () {
+
+			
+
+		
 			$(window).scroll(function () {
 				// set distance user needs to scroll before we fadeIn navbar
 				if ($(this).scrollTop() > 50 ) {
@@ -75,6 +70,7 @@
 					$('.navbar-brand img').css('height', '35px');
 					$('.navbar-brand img:last-of-type').hide();
 					$('#navbar').addClass('bg-light');
+					$('.stickycontact').fadeIn();
 					
                 //     $('#navbar').fadeIn();
                 //    $('#navbar').css( {
@@ -89,6 +85,8 @@
 					$('.navbar-brand img:last-of-type').show();
 					$('.navbar-brand img:last-of-type').css('height', '35px');
 					$('#navbar').removeClass('bg-light');
+					$('.stickycontact').hide();
+					
 
 
 				} else {
@@ -96,7 +94,8 @@
 					$('.navbar-brand img:first-of-type').css('height', '100px');
 					$('.navbar-brand img:last-of-type').show();
 					$('.navbar-brand img:last-of-type').css('height', '50px');
-                    $('#navbar').removeClass('bg-light');
+					$('#navbar').removeClass('bg-light');
+					$('.stickycontact').hide();
 				}
 			});
 	

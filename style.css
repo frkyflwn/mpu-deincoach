@@ -116,6 +116,9 @@ section {
     z-index: 10000;
     height: 100px;
     width: 100px;
+    display: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 
 }
 
@@ -133,28 +136,33 @@ section {
     color: #fff;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+
     
 }
 
-.stickycontact .fa-envelope,.stickycontact .fa-phone, .stickycontact .fa-whatsapp, .stickycontact .fa-calendar-check, .stickycontact .fa-times  {
+.stickycontact .fa-envelope,.stickycontact .fa-phone, .stickycontact .fa-whatsapp, .stickycontact .fa-calendar-check  {
 
     visibility: hidden;
         
 }
 
-.stickycontact .fa-comments {
+.stickycontact .fa-plus {
     background-color: #f4e000;
 }
 
+.stickycontact .fa-plus.active {
+    transform: rotate(45deg);
+}
+
 .stickycontact .fa-phone.active {
-    transform: translateX(-90px);
+    transform: translateY(-90px);
     visibility: visible;
     
 }
 
 .stickycontact .fa-whatsapp.active {
     background-color: #25d366;
-    transform: translateX(-180px);
+    transform: translateY(-180px);
     visibility: visible;
 }
 
@@ -166,12 +174,12 @@ section {
 
 .stickycontact .fa-envelope.active {
     background-color: #25d366;
-    transform: translateX(-360px);
+    transform: translateY(-360px);
     visibility: visible;
 }
 
 .stickycontact .fa-calendar-check.active {
-    transform: translateX(-270px);
+    transform: translateY(-270px);
     visibility: visible;
 }
 
@@ -313,6 +321,11 @@ header h4 b {
     width: 100%;
 }
 
+section:before {
+    height: 61px;
+    content: "";
+    display:block;
+}
 
 
 section#Info i:not(.fa-chevron-down) {
@@ -347,10 +360,10 @@ section#Info {
 
   section#Info2 .mpuitems i:not(.downarrow) {
     background-color: #ffe800;
-    width: 110px;
-    padding: 30px;
+    width: 82px;
+    padding: 20px;
     text-align: center;
-    font-size: 5vh;
+    font-size: 4vh;
     margin-right: 20px;
 }
 
@@ -551,6 +564,7 @@ section#UnserAngebot .card-deck .card {
     footer {
         background-color: #212529;
         color: #fff;
+        text-align: center;
     }
 
     footer a {
@@ -558,10 +572,13 @@ section#UnserAngebot .card-deck .card {
 
     }
 
-    footer h5.text-uppercase {
+    footer h5.text-uppercase:after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+         display: block; /* This will put the pseudo element on its own line. */
+         margin: 0 auto; /* This will center the border. */
         border-bottom: 2px solid #f4e000;
         padding-bottom: 5px;
-        width: 50px;
+        width: 25%;
 
     }
 
