@@ -7,7 +7,7 @@ header {
 
 }
 
-body {
+section {
     overflow-x: hidden;
 }
 
@@ -218,6 +218,10 @@ body {
     
 }
 
+.far {
+    line-height: 5rem;
+}
+
 .serviceicons i {
     font-size: 2.5em;
 }
@@ -354,13 +358,17 @@ section#Info2 p {
     padding: 25px;
 }
 
+section#Erstgespraech tr i {
+    line-height: 5rem;
+}
+
 .erstgespraechinfo i:not(.fa-chevron-right) {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 20px;
 }
 
 .erstgespraechinfo {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 section#UnserAngebot .card-deck {
