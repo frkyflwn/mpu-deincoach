@@ -87,12 +87,12 @@ section {
 
 
 .kanteheader {
-    height: 100vh;
+    height: 100px;
     position: absolute;
     width: 100%;
-    bottom: 0;
-    -webkit-clip-path: polygon(100% 100%, 0 80%, 0 100%);
-    clip-path: polygon(100% 100%, 0 80%, 0 100%);
+    bottom: -1px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
     z-index: 10;
     background-color: #ffe800;
 }
@@ -196,8 +196,21 @@ section {
     position: absolute;
     transition: 5s ease-in;
     transition: 50s;
+}
 
+header {
+    background-color: #ffe800;
+}
 
+.imageheader2 {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgb(0, 0, 0, 0.1)) ,url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    position: relative;
+    transition: 5s ease-in;
 }
 
 .imageheader:hover {
@@ -268,10 +281,18 @@ section {
 
 
 
-.navbar, .navbar-brand img {
+.navbar {
 
     transition: 0.5s;
+   /* new */
+   padding: 10px 10%;
+    
 
+}
+
+.navbar-brand img {
+
+    height: 50px;
 }
 
 a.navbar-brand {
