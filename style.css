@@ -237,7 +237,7 @@ section {
     height: 850px;
     width: 100%;
     text-align:center;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgb(255, 255, 255,0.5)) ,url(header.jpg);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgb(255, 255, 255, 0.1)) ,url(header.jpg);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -780,28 +780,10 @@ section#UnserAngebot .card-deck .card {
         
     }
 
-    @media (max-width: 560px) {
+    @media (max-width: 600px) {
 
-        .serviceicon p {
-            font-size: 0.5rem;
-            margin-top: 2px;
-        }
-
-        .serviceicons i {
-            font-size: 1.5rem;
-        }
-
-        .serviceicon {
-            height: 50px;
-            width: 50px;
-            padding: 35px;
-            margin: 0;
-            margin-right: 2vh;
-        }
-        .serviceicon:nth-child(4) {
-
-            margin-right: 0;
-
+        .imageheader2 h1 {
+            font-size: 2.5rem;
         }
 
         .mpulogo {
@@ -811,45 +793,17 @@ section#UnserAngebot .card-deck .card {
         .mpulogo2 {
             height: 35px;
         }
+
+        
+        
+        
     }
 
-    @media (max-width: 500px) {
 
-        .col-10.col-md-8.text-center.d-flex.flex-column h1 {
-            font-size: 2.5rem;
+    @media (max-width: 450px) {
+
+        .mpulogo2 {
+            display: none;
         }
 
     }
-
-    @media (max-height: 800px) {
-
-        .col-10.col-md-8.text-center.d-flex.flex-column h1 {
-            font-size: 2.5rem;
-        }
-
-        .serviceicon p {
-            font-size: 0.5rem;
-            margin-top: 2px;
-        }
-
-
-        .serviceicon {
-            height: 80px;
-            width: 80px;
-            padding: 35px;
-            margin: 0;
-            margin-right: 2vh;
-        }
-        .serviceicon:nth-child(4) {
-
-            margin-right: 0;
-
-        }
-
-        .serviceicons {
-            bottom: 10px
-        }
-
-
-
-}
