@@ -509,11 +509,10 @@ section#Info {
   }
 
   section#Info2 .mpuitems i:not(.downarrow) {
-    background-color: #ffe800;
     width: 82px;
     padding: 20px;
     text-align: center;
-    font-size: 4vh;
+    font-size: 3rem;
     margin-right: 20px;
 }
 
