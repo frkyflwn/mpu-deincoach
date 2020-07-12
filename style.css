@@ -782,8 +782,21 @@ section#UnserAngebot .card-deck .card {
 
     @media (max-width: 600px) {
 
+        header {
+            height: 650px;
+        }
+
+        .zoomoutheader {
+            height: 650px;
+        }
+
+        .imageheader2 {
+            height: 650px;
+        }
+
         .imageheader2 h1 {
             font-size: 2.5rem;
+            padding: 0!important;
         }
 
         .mpulogo {
@@ -794,9 +807,14 @@ section#UnserAngebot .card-deck .card {
             height: 35px;
         }
 
-        
-        
-        
+    }
+
+    @media (max-width: 350px) {
+
+        section#section10 {
+           display: none;
+        }
+
     }
 
 

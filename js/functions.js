@@ -96,6 +96,7 @@
 					$('.navbar-brand img:first-of-type').css('height', '60px');
 					$('.navbar-brand img:last-of-type').hide();
 					$('#navbar').removeClass('bg-light');
+					$('.stickycontact').hide();
 					 
 				} else {
 					//$('#navbar').fadeOut();
