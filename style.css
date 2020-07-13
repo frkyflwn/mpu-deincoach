@@ -1,3 +1,8 @@
+/* #navbar li.active a {
+    border-top: 3px solid #333;
+    color: #333;
+} */
+
 body {
 
 background-color: #ffe800;
@@ -8,7 +13,7 @@ header {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 850px;
+    height: 700px;
 
 }
 
@@ -234,7 +239,7 @@ section {
 }
 
 .imageheader2 {
-    height: 850px;
+    height: 700px;
     width: 100%;
     text-align:center;
     background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgb(255, 255, 255, 0.1)) ,url(header.jpg);
@@ -252,7 +257,7 @@ section {
   }
 
 .zoomoutheader {
-    height: 850px;
+    height: 700px;
     width: 100%;
     text-align:center;
     background: none;
@@ -285,7 +290,7 @@ header {
 }
 
 .headericons i {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-bottom: 10px;
 }
 
@@ -416,7 +421,7 @@ section:before {
 
 
 section#Info i:not(.fa-chevron-down) {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 
@@ -548,6 +553,10 @@ section#UnserAngebot .card-header {
 
 section#UnserAngebot .card-deck .card {
     border: none; 
+}
+
+section#UnserAngebot .card-text {
+    height: 50px;
 }
 
 
@@ -706,7 +715,7 @@ section#UnserAngebot .card-deck .card {
     }
 
     section#Kontakt i {
-        font-size: 5rem;
+        font-size: 4rem;
         padding: 50px 20px;
     }
 
@@ -779,7 +788,7 @@ section#UnserAngebot .card-deck .card {
         
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 780px) {
 
         header {
             height: 650px;
